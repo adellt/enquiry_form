@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Enquiry Form</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+	<div class="header">
+		<h1>Enquiry Details</h1>
+			<div id="buttons">
+				<button type="button">Save</button>
+				<button type="button">New</button>
+				<button type="button">Delete</button>
+				<h2 id="title">Title of enquiry</h2>
+			</div>
+	</div>
+
+	<!--Tabs-->
+	<div id="tabs">
+		<ul class="tab-headings">
+			<li class="active"><a href="#general_info">General Information</a></li>
+			<li><a href="#enquiry_details">Enquiry Details</a></li>
+		</ul>
+
+	<!--First tab - General Information-->
+		<div id="content">
+			<div class="tab active" id="general_info" >
+				<div class="left">
+					<div class="box" id="contact">
+						<h3>Contact</h3>
+						<p>
+							Given <input type="text" name="given"><br />
+							Surname <input type="text" name="surname"><br />
+							Short Desc <input type="text" name"short_desc">
+						</p>
+					</div>
+					<div class="box" id="enquiry_status">
+						<h3>Enquiry Status</h3>
+						<p>
+							Status <input list="enq_status"><br />
+							<datalist id="enq_status">
+								<option value="Active">
+								<option value="Closed">
+								<option value="Pending">
+							</datalist>
+							Priority <input list="priority"><br />
+							<datalist id="priority">
+								<option value="high">
+								<option value="medium">
+								<option value="low">
+							</datalist>
+							Risk <input list="risk"><br />
+							<datalist id="risk">
+								<option value="high">
+								<option value="medium">
+								<option value="low">
+							</datalist>
+							Time Spent <input type="time">
+					</div>
+					<div class="box" id="staff">
+						<h3>Staff</h3>
+						<p>
+							Assigned To<br />
+							Opened By <br />
+							Opened Date <input type="date" name="opened"><br />
+							Closed Date <input type="date" name="closed">
+						</p>
+
+					</div>
+				</div>
+				<div class="right">
+					<div class="box" id="contact_details">
+						<h3>Contact Details</h3>
+						<p>
+							Phone <input type="text" name="phone"><br />
+							Email <input type="text" name="email"><br />
+							Role <input list="role"><br />
+							<datalist id="role">
+								<option value="RN">
+								<option value="EN">
+								<option value="Doctor">
+								<option value="NP">
+							</datalist>
+							<input type="number" name="phonecalls" class="no_contact"> Phonecalls <input type="number" name="emails" class="no_contact"> Emails
+						</p>
+					</div>
+					<div class="box" id="apna_member">
+						<h3>APNA Member</h3>
+						<p>
+							APNA Status <input list="member_status"><br />
+							<datalist id="member_status">
+								<option value="Member">
+								<option value="Non-member">
+								<option value="Student">
+							</datalist>
+							Memb # <input type="number" name="memb_number">
+						</p>
+					</div>
+					<div class="box" id="misc">
+						<h3>Misc</h3>
+						<p>
+							Category <input list="category"><br />
+							Category 2 <input list="category"><br />
+							Category 3 <input list="category"><br />
+							<datalist id="category">
+								<option value="Study">
+								<option value="Immunisation">
+								<option value="Nurse Practitioner">
+								<option value="APNA">
+							</datalist>
+							Attachment 
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!--Second tab - Enquiry Details-->	
+			<div class="tab" id="enquiry_details">
+				<div class="left">
+					<div class="box" id="info_in">
+						<h3>Information In</h3>
+						<textarea rows="10" cols="30" name="info_in_data"></textarea>
+					</div>
+				</div>
+				<div class="right">
+					<div class="box" id="info_out">
+						<h3>Information Out</h3>
+						<textarea rows="10" cols="30" name="info_out_data"></textarea>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

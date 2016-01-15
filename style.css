@@ -1,0 +1,112 @@
+body {
+	background-color:#D6D6D6;
+	font-family:"calibri";
+}
+
+.wrapper {
+	height:540px;
+	width:692px;
+	background-color:#F5F5F5;
+}
+
+/*---------------Header-----------------*/
+.header {
+	height:55px;
+	width:672px;
+	background-color:#C5E0B5;
+	padding: 5px 10px;
+}
+
+#title {
+	float:right;
+}
+
+/*------------------Tabs-------------------*/
+#tabs {
+	width:100%;
+	display:inline-block;
+}
+
+.tab-headings {
+	/*background-color:green;*/
+	height:27px;
+	margin: 5px 5px 0 5px;
+}
+
+.tab-headings li {
+	list-style:none;
+	float:left;
+	padding:5px;
+	border:1px solid #8E959D;
+	border-bottom: 0;
+	background-color:#D8DBE0;
+}
+
+.tab-headings .active {
+	background-color: white;
+	border-bottom: 1px solid white;
+}
+
+.tab-headings li:hover {
+	background-color: white;
+}
+
+.tab-headings a {
+	text-decoration: none;
+	color:black;
+}
+/*----------------Information---------------*/
+.tab {
+	display:none;
+}
+
+.tab.active {
+	display:block;
+}
+#content {
+	margin:0 5px 5px 5px;
+	height:435px;
+	border: 1px solid #8E959D;
+	background-color: white;
+}
+
+/*Columns*/
+.left, .right{
+	width:45%;
+	margin: 5px 15px 0 15px;
+	float:left;
+}
+
+.box {
+	border: 1px solid #8C96A2;
+	padding: 5px;
+	margin:10px 0;
+	background-color: white;
+}
+
+/*----------------Font---------------------*/
+h1 {
+	font-size:20pt;
+	font-weight:bolder;
+	padding: 0 0 5px 0;
+}
+
+h2 {
+	font-size:16pt;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+input {
+	font-family:"calibri";
+	margin-top: 5px;
+	border: 1px solid #8C96A2;
+	font-size: medium;
+}
+/*----------------Specifics----------------*/
+.no_contact {
+	width:20px;
+}
+
